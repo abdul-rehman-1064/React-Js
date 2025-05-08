@@ -1,0 +1,99 @@
+React is a library
+Attachments
+1- React Dom (Website)
+2- React native (Used for mobile apps)
+npm node package manager
+later on npx node package executer
+
+npx create-react-app (file name) ->installation process but it take time
+second method
+1-npm create vite@latest my-app
+2-select framework
+3-select react
+4-select javascript 
+5-npm run dev
+6-cd (project name)
+7-dir
+8-npm i (to install node module)
+
+
+To run ->1-npm run start
+2- npm run build
+
+
+Tailwind configure:
+
+1-npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+
+2- content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  (tailwindcss config file)
+
+3-@tailwind base;
+@tailwind components;
+@tailwind utilities;
+(index.css)
+
+import React from 'react' ->core foundation for collecting refrences
+
+
+react is a library
+React Dom ->is an implementation to web 
+React native ->is an implementation to mobile apps
+
+npm-> node package manager
+npx->node package executer
+createReactApp-> is a utility like software
+
+React Dom called virtual Dom
+
+React Fiber -> Like jesse ke ap ke pass aik function call ayi phir 2 and then 3 in ko brower ke main dom mein ly kr ane ke liye ap ko 3 bar krna prhna tha lakin react fiber ap ke help krte hain ke like agar ap ke pass kuch time mein pehle call ko execute krne se pehle agar aur functions call a gye hain to un ko pause kiya jaye
+
+{} called evaluated expression is mein javascript ka sirf final outcome atta hai is mein hum koi be condition statement use nai kr skte hain like if,else if q ke react as a object treat hota hai aur object mein koi be condition statement nai atti hain
+
+Key Features Of React Fiber :
+1- Pause
+2-Abort
+3-Reuse as new Update in
+4-Priority to different types of update
+
+Hideration process -> Jab web page load ho jata hai to us mein dom elements aik bari paint ho jate hain like pic , text ,button lakin javascript nai hoti hai jb javascript hoti hai load to us process ko hideration kehte hain 
+
+Reconcilation -> is an algorithum that reconsider , and recursive algorithum hai 
+The algorithm React uses to diff one tree with another to determine which parts need to be changed.
+Trees -> dom tree and react tree (create root) give one web page
+Reconciliation is the algorithm behind what is popularly understood as the "virtual DOM."
+
+ Render is the technique that can redirect a page with the help of function render()
+ The render method will always return a single child component. The return method can return any value
+
+ According Fiber diffing lists is performed using keys.keys should be "stable,predictable and unique" like arrays
+
+
+ The key points are:
+
+In a UI, it's not necessary for every update to be applied immediately; in fact, doing so can be wasteful, causing frames to drop and degrading the user experience.
+Different types of updates have different priorities — an animation update needs to complete more quickly than, say, an update from a data store.
+A push-based approach requires the app (you, the programmer) to decide how to schedule work. A pull-based approach allows the framework (React) to be smart and make those decisions for you.
+
+Fiber
+We've established that a primary goal of Fiber is to enable React to take advantage of scheduling. Specifically, we need to be able to
+
+pause work and come back to it later.
+assign priority to different types of work.
+reuse previously completed work.
+abort work if it's no longer needed.
+
+
+React is use for UI 
+React Dom is use to connect Real dom and react 
+Hooks ? Special type of function (Pehle react class components pr kam krta tha lakin ab woh functional components pr kam krta hai)
+
+1. use Callback: used for optimization it calls the function inside it when the dependencies are changed and returns a memorized function 
+like jesse ke agar hum aik function ko bar bar call kr rahe hain is hook ka kam yeh hai ke ap pehle ke kuch value ko cache(Memory) se use kr loo baki jo nai ho rahi na hoon aur dependencies mein in ko optimize karo
+
+2.useeffect: runs the function inside it whenever the page renders first-time or dependencies are changed
+3.use ref : used to give reference of selected components in our page so that functions can be performed on referenced values

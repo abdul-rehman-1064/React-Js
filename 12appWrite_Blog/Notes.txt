@@ -1,0 +1,2 @@
+vender ->like jese ke agar in future hum ko apni authentication ko apne website se remove krna ho to hum kr le aur humaro website be sai se chal sake idhr aik concept atta hai services ka 
+services is like a class jahan se hum kuch method export krte hain  

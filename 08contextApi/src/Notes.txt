@@ -1,0 +1,24 @@
+Redux -> state management ko control krna means ke jo yeh title (data) pass ho raha hai is ko aik organize way mein pass kiya jaye
+
+Context Api -> like example of dashborad we have some components like dashborad, aside , rightside(topcom,bottomcom)
+agar hum ko apna data topcom ko pass krna hai to hum ko woh data dashborad,rightside aur topcom ko pass krna pare ga lakin jb ke dashborad,rightside ko us ke zaroorat nai hai 
+isi liye hum aik global object bana lyte hain jo phir hum different components mein pass kr skte hain isi concept ko context api be kaha jata hai 
+
+react-Redux,redux-toolkit (RTK)
+
+context like a global variable 
+
+Context Points
+1-> Import react
+2-> Create context by React.Createcontext() _> Context Give a context provider (That provide data)
+3-> export variable of Context
+
+
+We can wrap all components in a userContext(vaiable) fragment so this become provider and can assess values
+ <userContext> {wraper} <userContext/>
+
+ children in userContextProvider is like a div that same like props 
+ ke humare pass jo data a raha us ko usi tarhan next forward kiya jaye
+
+ retrun have wrap that is the concept of context api
+ Through Value{object passes} values ka access mil jaye ga

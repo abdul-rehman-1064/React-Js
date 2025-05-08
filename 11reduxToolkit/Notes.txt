@@ -1,0 +1,30 @@
+Redux is a independent library
+Agr hum ko react mein redux chahiye to hum ko redux  (core library) be required ho ga aur react-redux be chahiye
+
+jab redux aaya tha to uske stepup me thoda jayada time lagta tha compare to context api and debugging karne me v problem ja rhi thi. tab developers ne redux-toolkit introduce kiya jisme setUp or debugging easy ho gya kuchh redux functions be add kiye, isliye redux use karne ke liye ye dono libraries install karni zarorri hai.
+aur like jesse ke contextapi mein humare pass koi array hai us mein object hain to mujhe is cheez ke porblem na ho ke mujhe purana  data pehle spread krna hai phir us ke baad next kam krna hai isi liye be redux aya ke hum ko is cheez se problem na ho bus mein data enter karoon baki yeh sub cheezain (state managment) khud ho jayain
+
+phir humare pass aya redux toolkit (batteries included) means simple set and boht sari cheezain khud manage kare ga
+
+
+
+Redux toolkit
+1. Create Store - single source of truth
+it has configureStore
+introduce reducer
+
+2. Create Slice(functions) method(createSlice)
+Slice has name, initialState, reducers :{key: function}
+Access of two things (State, action)
+state = state value in the store (current values or situation) jesse ke humare pass 10 values ke array hai to state ke pass last index wali values ka access ho ga
+action = action.payload 
+export individual functionality 
+export main source export
+
+useDispatch reducer(functionality parts) ka use krte howe store mein values change krta hai
+
+3. Add Todo - Give values to State i.e Dispatch Courier  = use method useDispatch()
+ dispatch(addTodo())
+
+4. Take Values - useSelector((state) =>state.'values') state ka access chaiye
+variable me values lelo ek baar aagaie uske baad pure JS concept hai 
