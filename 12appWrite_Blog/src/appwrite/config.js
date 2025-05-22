@@ -37,7 +37,7 @@ export class Service {
         try {
             return await this.databases.updateDocument(
                 conf.appwriteDatabaseId,
-                conf.appwriteCollectiId,
+                conf.appwriteCollectionId,
                 slug,
                 {
                     title,
@@ -56,7 +56,7 @@ export class Service {
         try {
             await this.databases.deleteDocument(
                 conf.appwriteDatabaseId,
-                conf.appwriteCollectiId,
+                conf.appwriteCollectionId,
                 slug
             
             )
@@ -71,7 +71,7 @@ export class Service {
         try {
             return await this.databases.getDocument(
                 conf.appwriteDatabaseId,
-                conf.appwriteCollectiId,
+                conf.appwriteCollectionId,
                 slug
             
             )
@@ -85,7 +85,7 @@ export class Service {
         try {
             return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
-                conf.appwriteCollectiId,
+                conf.appwriteCollectionId,
                 queries,
                 
 
