@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  margin-top: 22px;
+  background-color: #212121;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+input{
+  background-color: #424242;
+  color: #ffffff;
+  border: 1px solid #616161;
+  padding: 10px;
+  border-radius: 4px;
+  width: 200px;
+  height: 40px;
+  margin: 12px;
+}
+
+input::placeholder{
+  font-size: 18px;
+  font-weight: lighter;
+}
