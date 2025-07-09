@@ -34,7 +34,7 @@ function Signup() {
                         <Logo width="100%" />
                     </span>
                 </div>
-                <h2 className="text-center text-2xl font-bold leading-tight">Sign up to create account</h2>
+                <h2 className="text-center text-2xl font-bold leading-tight text-green-700">Sign up to create account</h2>
                 <p className="mt-2 text-center text-base text-black/60">
                     Already have an account?&nbsp;
                     <Link
@@ -74,9 +74,8 @@ function Signup() {
                         {...register("password", {
                             required: true,})}
                         />
-                        <Button type="submit" className="w-full">
-                            Create Account
-                        </Button>
+                        <Button type="submit" className="w-full bg-green-600" childrenText="Create Acount"/>
+                            
                     </div>
                 </form>
             </div>
