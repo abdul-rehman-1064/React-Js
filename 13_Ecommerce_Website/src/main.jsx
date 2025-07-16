@@ -19,7 +19,7 @@ import { DataProvider } from "./context/DataContext.jsx";
 import SingleProduct from "./pages/SingleProduct.jsx";
 import { CartProvider } from "./context/CartContext.jsx";
 import CategoryProducts from "./pages/CategoryProducts.jsx";
-
+import Protected from "./components/Protected.jsx";
 
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -37,7 +37,7 @@ const router = createBrowserRouter(
       <Route path="products" element={<Products />} />
       <Route path="category/:category" element={<CategoryProducts />} />
       <Route path="products/:id" element={<SingleProduct />} />
-      <Route path="cart" element={<Cart />} />
+      <Route path="cart" element={<Protected > <Cart /></Protected>} />
     </Route>
   )
 );

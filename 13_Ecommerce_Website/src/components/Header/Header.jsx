@@ -24,29 +24,6 @@ function Header() {
   };
   
 
-  // const navItems =[
-  //   {
-  //     name:"Home",
-  //     slug:'/',
-  //   },
-  //   {
-  //     name:"About Us",
-  //     slug :'/about'
-  //   },
-  //   {
-  //     name:"Products",
-  //     slug:'/products'
-  //   },
-  //   {
-  //     name:"Contact Us",
-  //     slug:'/contact'
-  //   },
-  //   {
-  //     name:"Cart",
-  //     slug:'/cart',
-  //   }
-  // ]
-
   const getLocation = async () => {
     navigator.geolocation.getCurrentPosition(async (position) => {
       const { latitude, longitude } = position.coords;
